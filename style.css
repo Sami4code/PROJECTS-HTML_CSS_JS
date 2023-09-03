@@ -103,7 +103,7 @@ img {
     /* height: 120px; */
     width: 6px;
     position: absolute;
-    transform-origin: bottom center; /*puts the arrows at a fixed bottom positon*/
+    transform-origin: bottom center; /*puts the arrows at a fixed bottom position*/
     bottom: 50%;
     z-index: 3;
     border-radius: 50% 50% 0 0;
@@ -118,7 +118,7 @@ img {
     height: 100px;
     transform: rotate(250deg);
     width: 5px;
-    
+
 }
 
 .arrows .second  {
