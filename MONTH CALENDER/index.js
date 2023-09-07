@@ -34,7 +34,12 @@ for(let i = firstDay; i > 0; i--) {
 }
 
 for (let i = 1; i <= lastDay; i++) {
-    days += `<div>${i}</div>`;
+    if ((i === new Date().getDate())) {
+        days += `<div class="today">${i}</div>`;
+    } else {
+        days += `<div>${i}</div>`; /* else statement enables the function not to display 7 twice, hence displays other numbers accordingly */
+    }
+        
+       
 }
-
 daysEl.innerHTML = days;
