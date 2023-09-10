@@ -8,7 +8,7 @@ eg, if Sept is the current month, it returns it as 8, January is a zero index in
 const lastDay = new Date(new Date().getFullYear(), monthInx + 1, 0).getDate(); /* zero means the previous month, 1 means the current month, 
 if 2, it means the following month... .getDate gets last date which is nummber 30 */ 
 const firstDay = new Date(new Date().getFullYear(), monthInx, 1).getDay() - 1; /* makes the week to start from monday and has the index of 0 */
-console.log(firstDay);
+// console.log(firstDay);
 
 const months = [
     "January",
