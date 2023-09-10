@@ -1,6 +1,6 @@
 const monthEl = document.querySelector(".date h1"); /* selects h1 from html*/
 const fullDateEl = document.querySelector(".date p"); /* selects p from html*/
-const daysEl = document.querySelector(".days"); /* selects p from html*/
+const daysEl = document.querySelector(".days"); /* selects days from html*/
 
 
 const monthInx = new Date().getMonth(); /* new Date represents the current date and time / .getMonth returns the month as zero based index.
