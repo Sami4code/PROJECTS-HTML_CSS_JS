@@ -27,7 +27,7 @@ const months = [
 monthEl.innerText = months[monthInx]; /* displays the h1 of the calender */
 fullDateEl.innerText = new Date().toDateString(); /* displays the p of the calender */
 
-let days = "";
+let days = ""; /* used to store the days of the month */
 
 for(let i = firstDay; i > 0; i--) {
     days += `<div class="empty"></div>`; /* removes the numbers that occupied the empty divs, and leaves them empty */
