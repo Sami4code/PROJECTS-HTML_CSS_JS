@@ -3,7 +3,8 @@ const fullDateEl = document.querySelector(".date p"); /* selects p from html*/
 const daysEl = document.querySelector(".days"); /* selects p from html*/
 
 
-const monthInx = new Date().getMonth();
+const monthInx = new Date().getMonth(); /* new Date represents the current date and time / .getMonth returns the month as zero based index.
+eg, if Sept is the current month, it returns it as 8, January is a zero index in JS */
 const lastDay = new Date(new Date().getFullYear(), monthInx + 1, 0).getDate(); /* zero means the previous month, 1 means the current month, 
 if 2, it means the following month... .getDate gets last date which is nummber 30 */ 
 const firstDay = new Date(new Date().getFullYear(), monthInx, 1).getDay() - 1;
