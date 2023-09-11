@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    display: flex; /* to be able to bring the contents to the middle */
+    justify-content: center; /* centre the contents vertically */
+    height: 100vh;
+    align-items: center; /* to position the items to the centre horizontally */
+    background-color: darkblue;
+    color: white;
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.mouse-event {
+    border: solid 1px lightgray;
+    margin: 40px;
+    min-width: 180px;
+    position: relative;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.mouse-event h4 {
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* to make them stay next to each other than wrapping after the transform translate property */
+    font-weight: 100;
+    color: lightgray;
+}
+
+@media (max-width:500px) {
+    .container {
+        flex-direction: column;
+    }
+    
+}
+
