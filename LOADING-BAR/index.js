@@ -11,6 +11,14 @@ function updateNum(){
     barEl.style.width = idx + "%"
     idx++
     if(idx < 101){
-        setTimeout(updateNum, 20);
+        setTimeout(updateNum, 50);
     }
 }
+
+/*function autoReloadPage() {
+    location.reload();
+}
+
+const reloadInterval = 10000;
+
+const reloadTimer = setInterval(autoReloadPage, reloadInterval);*/
