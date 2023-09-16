@@ -32,7 +32,7 @@ body {
     font-size: 14px;
     left: 50%;
     transform: translateX(-50%);
-    white-space: nowrap; /* to make the h4 stay next to each other than wrapping after the transform translate property */
+    white-space: nowrap; /* to make the h4] stay next to each other than wrapping after the transform translate property */
     font-weight: 100;
     color: lightgray;
 }
