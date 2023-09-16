@@ -30,7 +30,7 @@ body {
 .loading-bar-front {
     position: absolute; /* brought both lines on top of each other */
     height: 8px;
-    background-color:orangered;
+    background-color:rgb(46, 43, 237);
     width: 0%;
     border-radius: 5px;
     border: none;
