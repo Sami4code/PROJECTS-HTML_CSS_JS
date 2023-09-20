@@ -32,6 +32,41 @@ body {
     transition: all .3s linear;
 }
 
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    margin-left: -50px;
+}
+
+/* to make the sidebar visible on the webpage */
+.fa-bars {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: #e94949;
+    font-size: 1.5rem; /* 50% */
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+.fa-xmark {
+    font-size: 1.5rem;
+    color: #e94949;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    color: black;
+}
+
 @media (min-width: 676px) {
     .sidebar {
         width: 500px;
