@@ -1,0 +1,88 @@
+* { /* selects the entire body */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; /* initially, there was movement when you hover over the numbers, this property fixes that */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+}
+
+.calender {
+    background: black;
+    color: lightgray;
+    width: 450px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
+}
+
+.month {
+    width: 100%;
+    height: 120px;background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* gives curved ages at the top only */
+}
+
+.month h1 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.month p {
+    font-size: 16px;
+}
+
+.weekdays {
+    width: 100%;
+    height: 50px;
+    display: flex;
+
+}
+
+.weekdays div {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* wraps the days to be above each other in line */
+    padding: 2px;
+}
+
+.days div {
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px; /*gives vertical space btw numbers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover:not(.empty) { /* not empty excludes the empty divs from the hover effect */
+    border: 2px solid gray;
+    cursor: pointer;
+
+}
+
+.today {
+    background-color: lightseagreen;
+}
