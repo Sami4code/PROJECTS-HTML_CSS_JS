@@ -15,13 +15,13 @@ btn.addEventListener("click", () => {
     } else {
         // If playing, pause the video//
         video.pause();
-        // Remove the pause-btn, add the play-btn//
+        // Remove the pause-btn, add the play-btn //
         fa.classList.add("fa-play");
         fa.classList.remove("fa-pause");
 
     }
 })
-
+// Brings the preloader behind the website after it loads completely //
 window.addEventListener("load", () =>{
     preloader.style.zIndex = "-2";
 });
