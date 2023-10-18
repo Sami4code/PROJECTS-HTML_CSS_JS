@@ -16,7 +16,8 @@ h2{
     letter-spacing: 4px;
     font-size: 14px;
     text-align: center;
-    color: black;
+    color: purple;
+    font-weight: 900;
 }
 
 .clock {
